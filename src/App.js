@@ -81,7 +81,7 @@ function App()
 
 
 
-      {(typeof weather.main != "undefined") && (
+      {httpRequest && (
 
         <div className="location_box">
           <div className="date">Current Weather In:</div>
