@@ -9,13 +9,21 @@
     url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
   background-size: cover;
   height: 100vh;
+  width: 100vw;
+
   text-align: center;
 }
 
 h1 {
   color: rgb(244, 244, 244);
   margin-bottom: 1rem;
-  padding-top: 5rem;
+  padding-top: 1rem;
+}
+
+.date {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  color: rgb(123, 123, 123);
 }
 
 .search_box {
@@ -51,7 +59,7 @@ h1 {
   font-weight: 500;
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 50, .5);
-  margin-top: 3rem;
+
   background: rgba(0, 0, 0, 0.45);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
@@ -60,7 +68,8 @@ h1 {
   border: 1px solid rgba(24, 24, 24, 0.149);
   width: 300px;
   margin: 4rem auto;
-  padding: 2rem;
+  height: 300px;
+  padding: 1.5rem;
 }
 
 .underline {
@@ -84,27 +93,36 @@ h1 {
   padding: 15px 25px;
   color: white;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 40px;
   text-shadow: 3px 6px rgba(50, 50, 75, .5);
   text-align: center;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 
-.weather_box .weather {
+.weather_box {
   color: white;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700px;
 }
 
 .weather {
   display: flex;
-  flex-direction: column;
+  font-size: 30px;
+  font-weight: 700px;
+
 }
+
 
 .place {
   color: white;
   font-weight: 400;
   font-size: 36px;
   margin-top: 3rem;
+}
+
+.searchButton {
+  padding: .75rem;
+  margin: auto 1rem;
+  font-weight: 600;
 }

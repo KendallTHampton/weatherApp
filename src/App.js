@@ -2,6 +2,7 @@ import './App.css';
 import React, {useState} from 'react';
 
 
+
 const API_KEY = process.env.REACT_APP_API_KEY
 const baseURL = "https://api.openweathermap.org/data/2.5/"
 
@@ -17,7 +18,7 @@ function App()
 
   const search = evt =>
   {
-    if (evt.key === "Enter")
+    if (evt.key === "Enter" || evt.keyCode == '13' || evt.keyCode == '229')
     {
       const fetchWeather = async () =>
       {
@@ -72,7 +73,9 @@ function App()
           value={query}
           onChange={e => setQuery(e.target.value)}
           onKeyDown={search}
+          onm
         />
+
       </div>
 
 
@@ -80,7 +83,7 @@ function App()
       {(typeof weather.main != "undefined") && (
 
         <div className="location_box">
-          <div className="date">Current Weather</div>
+          <div className="date">Current Weather In:</div>
           <div className="location">{weather.name}, {weather.sys.country}</div>
           <div className="underline"></div>
           <div className="weather_box">
@@ -90,7 +93,7 @@ function App()
 
             <div className="weather">
               {showIcon}
-              {weather.weather[0].description}
+              <h3> {weather.weather[0].description}</h3>
             </div>
 
           </div>
