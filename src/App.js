@@ -76,7 +76,7 @@ function App()
           onKeyDown={search}
 
         />
-        <button onClick={search} className='searchButton'>Search</button>
+
       </div>
 
 
