@@ -18,7 +18,8 @@ function App()
 
   const search = evt =>
   {
-    if (evt.key === "Enter" || evt.key === '13' || evt.key === '229')
+
+    if (evt.key === "Enter" || evt.type === 'click')
     {
       const fetchWeather = async () =>
       {
@@ -73,9 +74,9 @@ function App()
           value={query}
           onChange={e => setQuery(e.target.value)}
           onKeyDown={search}
-          onm
-        />
 
+        />
+        <button onClick={search} className='searchButton'>Search</button>
       </div>
 
 
