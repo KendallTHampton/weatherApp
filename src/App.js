@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 
 
 
-const API_KEY = process.env.REACT_APP_API_KEY
+const API_KEY = '8adfd2a1278b601795e17f0d27eefe38'
 const baseURL = "https://api.openweathermap.org/data/2.5/"
 
 
