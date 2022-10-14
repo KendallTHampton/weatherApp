@@ -110,6 +110,7 @@ h1 {
   display: flex;
   font-size: 30px;
   font-weight: 700px;
+  align-items: center;
 
 }
 
