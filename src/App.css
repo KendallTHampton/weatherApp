@@ -1,38 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 .App {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .75)),
+    url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
+  background-size: cover;
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: rgb(244, 244, 244);
+  margin-bottom: 1rem;
+  padding-top: 5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search_box {
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.search_bar {
+  border: none;
+  width: 20rem;
+  margin: auto;
+  padding: 15px;
+  border-radius: 16px 16px;
+  background-color: rgba(214, 214, 214, 0.344);
+  box-shadow: 1px 2px 10px rgb(88, 88, 88);
+  font-size: 1rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search_bar::placeholder {
+  color: white;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search_bar:focus {
+  transition: .3s;
+  outline: none;
+  border: none;
+}
+
+.location_box {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 50, .5);
+  margin-top: 3rem;
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(24, 24, 24, 0.149);
+  width: 300px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.underline {
+  height: 1px;
+  background-color: white;
+
+}
+
+
+.weather_box {
+  text-align: center;
+
+}
+
+.weather_box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: white;
+  font-weight: 900;
+  font-size: 48px;
+  text-shadow: 3px 6px rgba(50, 50, 75, .5);
+  text-align: center;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.weather_box .weather {
+  color: white;
+  font-size: 48px;
+  font-weight: 700px;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.place {
+  color: white;
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 3rem;
 }
