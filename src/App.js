@@ -18,7 +18,7 @@ function App()
 
   const search = evt =>
   {
-    if (evt.key === "Enter" || evt.key == '13' || evt.key == '229')
+    if (evt.key === "Enter" || evt.key === '13' || evt.key === '229')
     {
       const fetchWeather = async () =>
       {
